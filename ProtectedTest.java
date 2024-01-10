@@ -2,14 +2,14 @@ import HowProtectedWorks.BatchSum;
 
 public class ProtectedTest {
     static class BatchSumWithMultiplication extends BatchSum {
-        protected boolean hasMultipliedAtleastOnce = false;
+        protected boolean hasMultipliedAtLeastOnce = false;
 
         public BatchSumWithMultiplication(int initialSum) {
             super(initialSum);
         }
 
         public BatchSumWithMultiplication mul(final int factor) {
-            hasMultipliedAtleastOnce = true;
+            hasMultipliedAtLeastOnce = true;
 
             sum *= factor;
             return this;
@@ -30,6 +30,6 @@ public class ProtectedTest {
         // System.out.println(batchSumAndMul.sum);
 
         // Does work
-        System.out.println(batchSumAndMul.hasMultipliedAtleastOnce);
+        System.out.println(batchSumAndMul.hasMultipliedAtLeastOnce);
     }
 }
